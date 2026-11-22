@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVault | Cadastro de jogos</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container"><span class="logo">GAME<span>VAULT</span></span><p>Seu catálogo de jogos</p></div>
+  </header>
+  <main class="container">
+    <section class="painel">
+      <h1>Cadastrar jogo</h1>
+      <p class="sub">Adicione um jogo ao seu catálogo.</p>
+      <form action="/itens" method="POST" class="formulario">
+        <label for="nome">Nome do jogo</label><input id="nome" name="nome" type="text" maxlength="120" required placeholder="Ex.: Minecraft">
+        <div class="linha">
+          <div><label for="genero">Gênero</label><input id="genero" name="genero" type="text" maxlength="60" required placeholder="Ex.: Sandbox"></div>
+          <div><label for="plataforma">Plataforma</label><input id="plataforma" name="plataforma" type="text" maxlength="60" required placeholder="Ex.: PC"></div>
+        </div>
+        <div class="linha">
+          <div><label for="ano">Ano de lançamento</label><input id="ano" name="ano" type="number" min="1950" max="2100" required placeholder="2024"></div>
+          <div><label for="nota">Nota (0 a 10)</label><input id="nota" name="nota" type="number" min="0" max="10" step="0.1" required placeholder="9.0"></div>
+        </div>
+        <button type="submit">Adicionar jogo</button>
+      </form>
+    </section>
+    <section class="painel lista">
+      <div class="cabecalho-lista"><div><h2>Jogos cadastrados</h2><p class="sub">Seu catálogo atual</p></div><span class="contador"><%= jogos.length %> registro(s)</span></div>
+      <% if (jogos.length === 0) { %>
+        <div class="vazio">Ainda não há jogos cadastrados. Use o formulário acima para adicionar o primeiro!</div>
+      <% } else { %>
+        <div class="tabela-wrap"><table><thead><tr><th>Jogo</th><th>Gênero</th><th>Plataforma</th><th>Ano</th><th>Nota</th></tr></thead><tbody>
+          <% jogos.forEach(jogo => { %><tr><td class="nome-jogo"><%= jogo.nome %></td><td><%= jogo.genero %></td><td><%= jogo.plataforma %></td><td><%= jogo.ano %></td><td><span class="nota"><%= Number(jogo.nota).toFixed(1) %>/10</span></td></tr><% }); %>
+        </tbody></table></div>
+      <% } %>
+    </section>
+  </main>
+  <footer>Projeto acadêmico • Node.js, Express, EJS e MySQL</footer>
+</body>
+</html>

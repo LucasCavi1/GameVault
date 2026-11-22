@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #10121b; color: #edf0f7; }
+.topo { background: #171a26; border-bottom: 1px solid #292d3b; padding: 24px 0; }
+.container { width: min(1050px, 92%); margin: auto; }
+.logo { font-size: 24px; font-weight: 900; letter-spacing: 2px; color: #f3f4fa; }
+.logo span { color: #8b5cf6; }
+.topo p { color: #a7adbd; margin: 7px 0 0; }
+main.container { padding: 34px 0; }
+.painel { background: #191d2a; border: 1px solid #2b3042; border-radius: 15px; padding: 26px; margin-bottom: 24px; box-shadow: 0 8px 28px #0002; }
+h1, h2 { margin: 0; font-size: 23px; }
+.sub { color: #a7adbd; margin: 8px 0 22px; }
+.formulario label { display: block; font-size: 14px; color: #c9ceda; margin: 15px 0 7px; }
+input { width: 100%; padding: 12px 13px; border-radius: 8px; border: 1px solid #353b4d; background: #111420; color: #f5f5f7; outline: none; }
+input:focus { border-color: #8b5cf6; box-shadow: 0 0 0 2px #8b5cf633; }
+.linha { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+button { margin-top: 22px; border: 0; background: #8b5cf6; color: white; font-weight: bold; padding: 13px 20px; border-radius: 9px; cursor: pointer; }
+button:hover { background: #7445db; }
+.cabecalho-lista { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+.contador { color: #c4b5fd; background: #302448; padding: 8px 12px; border-radius: 20px; font-size: 13px; }
+.tabela-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 600px; margin-top: 10px; }
+th, td { text-align: left; padding: 13px 12px; border-bottom: 1px solid #2b3042; }
+th { color: #a7adbd; font-size: 13px; }
+td { color: #dfe3ed; }
+.nome-jogo { font-weight: bold; color: #fff; }
+.nota { background: #302448; color: #c4b5fd; padding: 5px 9px; border-radius: 6px; }
+.vazio { text-align: center; padding: 30px 10px; color: #a7adbd; }
+footer { text-align: center; color: #777e91; padding: 15px 0 30px; font-size: 13px; }
+@media (max-width: 650px) { .painel { padding: 19px; } .linha { grid-template-columns: 1fr; gap: 0; } .cabecalho-lista { align-items: flex-start; flex-direction: column; } }
