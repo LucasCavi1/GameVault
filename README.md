@@ -37,7 +37,7 @@ npm start
 `id`, `nome`, `genero`, `plataforma`, `ano`, `nota`.
 
 ## Integrantes
-- Preencha com os nomes dos integrantes.
+ Lucas Cavichiolo Pereira - Daniel Vinicius Sabino - Gustavo Magalhães 
 
 ## Disciplina
-- Preencha com o nome da disciplina.
+Linguagem de Programação I
