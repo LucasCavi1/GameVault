@@ -1,4 +1,4 @@
-# GameVault — Cadastro de Jogos - Lucas Cavichiolo Pereira - Daniel Vinicius Sabino - Gustavo Magalhães 
+# GameVault — Cadastro de Jogos - Lucas Cavichiolo Pereira - Daniel Vinicius Sabino - Gustavo Magalhães - João Kluber
 
 Projeto acadêmico de aplicação web com Node.js, Express, EJS e MySQL. Permite cadastrar jogos e visualizar os registros em uma tabela.
 
@@ -37,7 +37,7 @@ npm start
 `id`, `nome`, `genero`, `plataforma`, `ano`, `nota`.
 
 ## Integrantes
- Lucas Cavichiolo Pereira - Daniel Vinicius Sabino - Gustavo Magalhães 
+ Lucas Cavichiolo Pereira - Daniel Vinicius Sabino - Gustavo Magalhães - João Kluber
 
 ## Disciplina
 Linguagem de Programação I
